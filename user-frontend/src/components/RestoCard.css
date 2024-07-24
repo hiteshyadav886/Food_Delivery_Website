@@ -1,0 +1,188 @@
+.resto-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+  overflow: hidden;
+  width: 320px;
+  margin: 20px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.resto-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.resto-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.resto-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0, 123, 255, 0.8);
+  color: #fff;
+  padding: 7px 12px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.resto-details {
+  padding: 20px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.resto-name {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+  font-weight: bold;
+}
+
+.resto-cuisine,
+.resto-price {
+  margin: 8px 0;
+  color: #666;
+  font-size: 0.9em;
+}
+
+.resto-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.resto-rating {
+  color: green;
+  font-weight: bold;
+  background: rgba(0, 255, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.resto-opens {
+  color: red;
+  font-weight: bold;
+}
+
+.resto-distance {
+  color: #777;
+  font-weight: bold;
+  background: rgba(0, 0, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .resto-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .resto-image {
+    height: 150px;
+  }
+
+  .resto-details {
+    padding: 15px;
+  }
+
+  .resto-name {
+    font-size: 1.3em;
+  }
+
+  .resto-cuisine,
+  .resto-price {
+    font-size: 0.8em;
+  }
+
+  .resto-info {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 768px) {
+  .resto-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .resto-image {
+    height: 120px;
+  }
+
+  .resto-details {
+    padding: 10px;
+  }
+
+  .resto-name {
+    font-size: 1.2em;
+  }
+
+  .resto-cuisine,
+  .resto-price {
+    font-size: 0.7em;
+  }
+
+  .resto-info {
+    font-size: 0.7em;
+  }
+
+  .resto-discount,
+  .resto-rating,
+  .resto-opens,
+  .resto-distance {
+    font-size: 0.8em;
+    padding: 3px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resto-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .resto-image {
+    height: 100px;
+  }
+
+  .resto-details {
+    padding: 10px;
+  }
+
+  .resto-name {
+    font-size: 1em;
+  }
+
+  .resto-cuisine,
+  .resto-price {
+    font-size: 0.6em;
+  }
+
+  .resto-info {
+    font-size: 0.6em;
+  }
+
+  .resto-discount,
+  .resto-rating,
+  .resto-opens,
+  .resto-distance {
+    font-size: 0.7em;
+    padding: 2px 6px;
+  }
+}
